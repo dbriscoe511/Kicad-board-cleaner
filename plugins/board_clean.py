@@ -34,6 +34,8 @@ class board_cleaner:
                     v.SetVisible(False)
                 elif unhide_val and hidden_val:
                     v.SetVisible(True)
+                    
+        pcbnew.Refresh()
 
 
 

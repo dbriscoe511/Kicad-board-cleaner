@@ -1,7 +1,7 @@
 {
     "$schema": "https://go.kicad.org/pcm/schemas/v1",
     "name": "Board cleaner",
-    "description": "Remove common part designatiors from PCB, such as resistors and caps",
+    "description": "Remove common part designatiors from silkscreen, such as resistors and caps",
     "description_full": "Allows user to remove designator silkscreen to clean up high density boards. Allows the user to input a list of designators to remove, such as [R,C,L,D], and hides the silkscreen labels for all parts that match the designator",
     "identifier": "com.github.kicad-user.kicad-beautiful-theme",
     "type": "plugin",

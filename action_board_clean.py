@@ -1,8 +1,10 @@
 
 from .board_clean import board_cleaner
 from .Clean_board_GUI import clean_boardGUI
+import os
+import wx
 
-class clean_dialog():
+class clean_dialog(clean_boardGUI):
     def __init__(self,parent):
         #this class inherets dialog
         super(clean_boardGUI, self).__init__(parent)
@@ -31,5 +33,26 @@ class clean_dialog():
     def on_cancel(self, event):
         event.Skip()
         self.Destroy()
+
+class clean_dialog_plugin(pcbnew.ActionPlugin):
+    def __init__(self):
+        super(clean_dialog_plugin, self).__init__()
+
+        self.frame = None
+
+        self.name = "Board Cleaner"
+        self.category = "Cleaning"
+        self.description = "Remove common part designatiors from silkscreen, such as resistors and caps"
+        self.icon_file_name = os.path.join(os.path.dirname(__file__), 'icon.png')
+    
+    def defaults(self):
+        pass
+
+    def Run(self):
+        self.frame = wx.FindWindowByName("PcbFrame")
+
+        dlg = clean_dialog(self.frame)
+        dlg.CenterOnParent()
+
 
 

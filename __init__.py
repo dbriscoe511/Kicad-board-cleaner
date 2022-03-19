@@ -8,4 +8,4 @@ try:
 except Exception as e:
 
     import wx
-    wx.MessageBox('cleaner', f"Something went wrong: \n {e}", wx.OK | wx.ICON_ERROR)
+    wx.MessageBox(f"Something went wrong: \n {e}", f"Something went wrong: \n {e}", wx.OK | wx.ICON_ERROR)

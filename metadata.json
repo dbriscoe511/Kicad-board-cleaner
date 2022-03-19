@@ -34,7 +34,12 @@
             "download_sha256": "YOUR_SHA256_HERE",
             "download_size": 1234,
             "download_url": "https://github.com/YOUR/DOWNLOAD/URL/kicad-beautiful-theme.zip",
-            "install_size": 5678
+            "install_size": 5678,
+            "platforms": [
+                "linux",
+                "macos",
+                "windows"
+            ]
         }
     ]
 }

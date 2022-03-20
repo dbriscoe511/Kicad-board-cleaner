@@ -42,11 +42,6 @@ class clean_boardGUI ( wx.Dialog ):
 
         bSizer14.Add( self.chkbox_exclude_des, 0, wx.ALL, 5 )
 
-        self.chkbox_hide_des_fab = wx.CheckBox( self, wx.ID_ANY, u"Hide designators from fab layer (not reccomended)", wx.DefaultPosition, wx.DefaultSize, 0 )
-        self.chkbox_hide_des_fab.SetToolTip( u"Replicate only footprints that are in the same group as anchor (selected) footprint" )
-
-        bSizer14.Add( self.chkbox_hide_des_fab, 0, wx.ALL, 5 )
-
         self.m_staticText51 = wx.StaticText( self, wx.ID_ANY, u"Values to hide list ( or * for all)", wx.DefaultPosition, wx.DefaultSize, 0 )
         self.m_staticText51.Wrap( -1 )
 

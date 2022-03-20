@@ -27,7 +27,6 @@ class clean_dialog(clean_boardGUI):
 
         #get checkboxes
         hide_des        = self.chkbox_hide_des.GetValue()
-        hide_des_fab    = self.chkbox_hide_des_fab.GetValue()
         unhide_des      = self.chkbox_exclude_des.GetValue()
         hide_val        = self.chkbox_hide_val.GetValue()
         unhide_val      = self.chkbox_exclude_val.GetValue()
@@ -40,7 +39,7 @@ class clean_dialog(clean_boardGUI):
         val_list = val_list.split(',')
 
         #clean
-        self.mop.hide(hide_des, hide_val, des_list, val_list, hide_des_fab, unhide_des, unhide_val )
+        self.mop.hide(hide_des, hide_val, des_list, val_list, unhide_des, unhide_val )
 
 
     def on_cancel(self, event):

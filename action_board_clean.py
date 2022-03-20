@@ -8,14 +8,19 @@ import logging
 import sys
 
 class clean_dialog(clean_boardGUI):
+    def SetSizeHints(self, sz1, sz2):
+        # DO NOTHING
+        pass
+
     def __init__(self,parent,mop,logger):
         #this class inherets dialog
+        super(clean_dialog, self).__init__(parent)
         
         self.mop = mop
         self.logger = logger
         logger.info("clean dialog init successful")
 
-        super(clean_boardGUI, self).__init__(parent)
+        
 
         
     def on_ok(self,event):
@@ -39,6 +44,9 @@ class clean_dialog(clean_boardGUI):
 
 
     def on_cancel(self, event):
+        self.logger.info("User canceled the dialog")
+        logging.shutdown()
+
         event.Skip()
         self.Destroy()
 

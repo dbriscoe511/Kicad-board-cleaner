@@ -35,6 +35,7 @@ zip -r Board_cleaner-$version-pcm.zip plugins resources metadata.json
 rm -r resources
 rm -r plugins
 rm metadata.json
+rm metadata_package.json
 
 # get the sha, size and fill them in the metadata
 cp metadata_source.json metadata.json

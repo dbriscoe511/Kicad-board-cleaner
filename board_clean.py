@@ -2,8 +2,8 @@ import pcbnew
 
 class board_cleaner:
 
-    def __init__(self):
-        self.board = pcbnew.GetBoard()
+    def __init__(self,board):
+        self.board = board
         self.modules = self.board.GetModules()
 
     def hide(hide_ref,hide_val,des_list_ref,des_list_val,hide_fab,unhide_ref,unhide_val,self):

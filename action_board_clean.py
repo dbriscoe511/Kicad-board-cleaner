@@ -3,13 +3,21 @@ from .board_clean import board_cleaner
 from .Clean_board_GUI import clean_boardGUI
 import os
 import wx
+import pcbnew
+import logging
+import sys
 
 class clean_dialog(clean_boardGUI):
-    def __init__(self,parent):
+    def __init__(self,parent,mop,logger):
         #this class inherets dialog
+        
+        self.mop = mop
+        self.logger = logger
+        logger.info("clean dialog init successful")
+
         super(clean_boardGUI, self).__init__(parent)
 
-        mop = board_cleaner()
+        
     def on_ok(self,event):
 
         #get checkboxes
@@ -44,15 +52,65 @@ class clean_dialog_plugin(pcbnew.ActionPlugin):
         self.category = "Cleaning"
         self.description = "Remove common part designatiors from silkscreen, such as resistors and caps"
         self.icon_file_name = os.path.join(os.path.dirname(__file__), 'icon.png')
+        self.dark_icon_file_name = os.path.join(os.path.dirname(__file__), 'icon.png')
     
+        self.debug_level = logging.INFO
+
+        self.plugin_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)))
+        self.version_file_path = os.path.join(self.plugin_folder, 'version.txt')
+
+        # load the plugin version
+        with open(self.version_file_path) as fp:
+            self.version = fp.readline()
+
+
     def defaults(self):
         pass
 
     def Run(self):
         self.frame = wx.FindWindowByName("PcbFrame")
+        board = pcbnew.GetBoard()
+        pass
 
-        dlg = clean_dialog(self.frame)
+        # go to the project folder - so that log will be in proper place
+        os.chdir(os.path.dirname(os.path.abspath(board.GetFileName())))
+
+        # Remove all handlers associated with the root logger object.
+        for handler in logging.root.handlers[:]:
+            logging.root.removeHandler(handler)
+
+        file_handler = logging.FileHandler(filename='board-cleaner.log', mode='w')
+        handlers = [file_handler]
+        # set up logger
+        logging.basicConfig(level=logging.INFO,
+                            format='%(asctime)s %(name)s %(lineno)d:%(message)s',
+                            datefmt='%m-%d %H:%M:%S',
+                            handlers=handlers)
+        logger = logging.getLogger(__name__)
+        logger.info("Plugin executed on: " + repr(sys.platform))
+        logger.info("Plugin executed with python version: " + repr(sys.version))
+        logger.info("KiCad build version: " + str(pcbnew.GetBuildVersion()))
+        logger.info("Plugin version: " + self.version)
+        logger.info("Frame repr: " + repr(self.frame))
+
+        logger.info("Showing dialog")
+        mop = board_cleaner(board)
+
+        dlg = clean_dialog(self.frame,mop,logger)
         dlg.CenterOnParent()
+
+        # find position of right toolbar
+        toolbar_pos = self.frame.FindWindowById(pcbnew.ID_V_TOOLBAR).GetScreenPosition()
+        #logger.info("Toolbar position: " + repr(toolbar_pos))
+
+        # find site of dialog
+        size = dlg.GetSize()
+        # place the dialog by the right toolbar
+        dialog_position = wx.Point(toolbar_pos[0] - size[0], toolbar_pos[1])
+        #logger.info("Dialog position: " + repr(dialog_position))
+        dlg.SetPosition(dialog_position)
+
+        dlg.Show()
 
 
 

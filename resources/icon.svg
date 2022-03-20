@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Слой_1"
+   data-name="Слой 1"
+   viewBox="0 0 24 24"
+   version="1.1"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   inkscape:export-filename="/home/danie/Desktop/code/board_cleaner/resources/iconx64.png"
+   inkscape:export-xdpi="251.83286"
+   inkscape:export-ydpi="251.83286"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1006"
+     id="namedview965"
+     showgrid="true"
+     inkscape:zoom="22.627417"
+     inkscape:cx="11.004349"
+     inkscape:cy="14.650369"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Слой_1"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1552" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata43">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>add_arc</dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs946">
+    <marker
+       style="overflow:visible"
+       id="marker4900"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleInS"
+       inkscape:isstock="true">
+      <path
+         transform="scale(-0.2)"
+         style="fill-rule:evenodd;stroke:#f2647e;stroke-width:1pt;stroke-opacity:1;fill:#f2647e;fill-opacity:1"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path4898" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4866"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleInS"
+       inkscape:isstock="true">
+      <path
+         transform="scale(-0.2)"
+         style="fill-rule:evenodd;stroke:#f2647e;stroke-width:1pt;stroke-opacity:1;fill:#f2647e;fill-opacity:1"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path3042" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleInS"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleInS"
+       inkscape:isstock="true">
+      <path
+         transform="scale(-0.2)"
+         style="fill-rule:evenodd;stroke:#f2647e;stroke-width:1pt;stroke-opacity:1;fill:#f2647e;fill-opacity:1"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path1701" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2212"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.3) translate(-2.3,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#f2647e;stroke-opacity:1;fill:#f2647e;fill-opacity:1"
+         id="path2210" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Sstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.3) translate(-2.3,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#f2647e;stroke-opacity:1;fill:#f2647e;fill-opacity:1"
+         id="path1592" />
+    </marker>
+    <style
+       id="style944">.cls-1{fill:none;stroke:#f2647e;stroke-linecap:round;stroke-linejoin:round;}.cls-2{fill:#f2647e;}.cls-3{fill:#8f8f8f;}.cls-4{fill:#DED3DD;}</style>
+  </defs>
+  <title
+     id="title948">annotate</title>
+  <rect
+     style="fill:#ded3dd;fill-opacity:1;stroke:none;stroke-width:1.6;stroke-opacity:1"
+     id="rect2440"
+     width="24"
+     height="24"
+     x="0"
+     y="0"
+     ry="4.5087504" />
+  <rect
+     class="cls-3"
+     x="1"
+     y="12"
+     width="22"
+     height="10"
+     id="rect1554"
+     style="fill:#1381b1;fill-opacity:1;stroke-width:1" />
+  <path
+     class="cls-2"
+     d="m 21.780516,7.4301817 c 0,0 -4.3521,5.2839003 -9.7206,5.2839003 -5.3685002,0 -9.7206002,-5.2839003 -9.7206002,-5.2839003 0,0 4.3521,-5.2840999 9.7206002,-5.2840999 5.3685,0 9.7206,5.2840999 9.7206,5.2840999 z"
+     id="path27639"
+     style="fill:#f2647e;fill-opacity:1" />
+  <rect
+     class="cls-1"
+     x="-2.8226511"
+     y="12.729204"
+     width="15.4646"
+     height="3.4266"
+     transform="rotate(-44.974)"
+     id="rect27643-3"
+     style="fill:#ded3dd;fill-opacity:1;stroke:none" />
+  <rect
+     class="cls-3"
+     x="1"
+     y="12"
+     width="22"
+     height="10"
+     id="rect1554-6"
+     style="fill:#1381b1;fill-opacity:1;stroke-width:1" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:condensed;font-size:11.2px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Semi-Bold Condensed';letter-spacing:0px;word-spacing:0px"
+     x="11.968635"
+     y="21.022593"
+     id="text1558"><tspan
+       sodipodi:role="line"
+       id="tspan1556"
+       x="11.968635"
+       y="21.022593"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:semi-condensed;font-size:11.2px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Semi-Bold Semi-Condensed';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">R42</tspan></text>
+  <path
+     class="cls-1"
+     d="M 8.0599158,9.2538677 A 3.5983,3.5983 0 0 1 13.265116,4.6124678 c 0.9567,0.6469999 -4.6063002,5.7963002 -5.2052002,4.6413999 z"
+     id="path27641"
+     style="fill:#ded3dd;fill-opacity:1;stroke:none" />
+  <path
+     class="cls-3"
+     d="m 5.5686708,14.416561 a 1.0715,1.0715 0 0 1 -0.7576,-1.83 L 17.468771,-0.08343959 a 1.0723632,1.0723632 0 1 1 1.5153,1.51779999 L 6.3263708,14.10346 a 1.0668,1.0668 0 0 1 -0.7577,0.313101 z"
+     id="path27645"
+     style="fill:#f2647e;fill-opacity:1" />
+</svg>

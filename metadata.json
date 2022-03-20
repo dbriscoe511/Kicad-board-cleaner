@@ -29,7 +29,7 @@
     "versions": [
         {
             "version": "1.0.0",
-            "status": "stable",
+            "status": "development",
             "kicad_version": "6.0",
             "download_sha256": "YOUR_SHA256_HERE",
             "download_size": 1234,

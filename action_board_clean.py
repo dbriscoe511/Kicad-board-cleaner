@@ -58,8 +58,8 @@ class clean_dialog_plugin(pcbnew.ActionPlugin):
         self.name = "Board Cleaner"
         self.category = "Cleaning"
         self.description = "Remove common part designatiors from silkscreen, such as resistors and caps"
-        self.icon_file_name = os.path.join(os.path.dirname(__file__), 'icon.png')
-        self.dark_icon_file_name = os.path.join(os.path.dirname(__file__), 'icon.png')
+        self.icon_file_name = os.path.join(os.path.dirname(__file__), 'iconx24.png')
+        self.dark_icon_file_name = os.path.join(os.path.dirname(__file__), 'iconx24.png')
     
         self.debug_level = logging.INFO
 

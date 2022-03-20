@@ -8,18 +8,18 @@
     "author": {
         "name": "Daniel Briscoe",
         "contact": {
-            "web": "https://mywebsite.com"
+            "web": "https://github.com/dbriscoe511"
         }
     },
     "maintainer": {
         "name": "Daniel Briscoe",
         "contact": {
-            "web": "https://mywebsite.com"
+            "web": "https://github.com/dbriscoe511"
         }
     },
-    "license": "GPL-3.0",
+    "license": "GPL-2.0",
     "resources": {
-        "homepage": "https://github.com/kicad-user/kicad-beautiful-theme"
+        "homepage": "https://github.com/dbriscoe511/Kicad-board-cleaner"
     },
     "tags": [
         "pcbnew",
@@ -28,13 +28,13 @@
     ],
     "versions": [
         {
-            "version": "1.0.0",
-            "status": "development",
+            "version": "VERSION",
+            "status": "stable",
             "kicad_version": "6.0",
-            "download_sha256": "YOUR_SHA256_HERE",
-            "download_size": 1234,
-            "download_url": "https://github.com/YOUR/DOWNLOAD/URL/kicad-beautiful-theme.zip",
-            "install_size": 5678,
+            "download_sha256": "SHA256",
+            "download_size": DOWNLOAD_SIZE,
+            "download_url": "https://github.com/dbriscoe511/Kicad-board-cleaner/releases/download/VERSION/Board-cleaner-VERSION-pcm.zip",
+            "install_size": INSTALL_SIZE,
             "platforms": [
                 "linux",
                 "macos",

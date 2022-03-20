@@ -4,7 +4,7 @@ class board_cleaner:
 
     def __init__(self,board,logger):
         self.board = board
-        self.modules = self.board.GetModules()
+        self.modules = self.board.GetFootprints()
         self.logger = logger
         self.logger.info("cleaner initialized")
 

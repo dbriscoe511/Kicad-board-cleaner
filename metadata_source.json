@@ -3,7 +3,7 @@
     "name": "Board cleaner",
     "description": "Remove common part designatiors from silkscreen, such as resistors and caps",
     "description_full": "Allows user to remove designator silkscreen to clean up high density boards. Allows the user to input a list of designators to remove, such as [R,C,L,D], and hides the silkscreen labels for all parts that match the designator",
-    "identifier": "com.github.kicad-user.kicad-beautiful-theme",
+    "identifier": "com.github.dbriscoe511.Kicad-board-cleaner",
     "type": "plugin",
     "author": {
         "name": "Daniel Briscoe",
@@ -27,6 +27,20 @@
         "clean"
     ],
     "versions": [
+        {
+            "version": "1.0.0",
+            "status": "stable",
+            "kicad_version": "6.0",
+            "download_sha256": "a18622dca26e8c49f5d9dc5be6da93c8f545a1e1f20abaaef063b36e6361584c",
+            "download_size": 10112,
+            "download_url": "https://github.com/dbriscoe511/Kicad-board-cleaner/releases/download/1.0.0/Board-cleaner-1.0.0-pcm.zip",
+            "install_size": 16599,
+            "platforms": [
+                "linux",
+                "macos",
+                "windows"
+            ]
+        },
         {
             "version": "VERSION",
             "status": "stable",

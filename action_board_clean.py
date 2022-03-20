@@ -94,7 +94,7 @@ class clean_dialog_plugin(pcbnew.ActionPlugin):
         logger.info("Frame repr: " + repr(self.frame))
 
         logger.info("Showing dialog")
-        mop = board_cleaner(board)
+        mop = board_cleaner(board,logger)
 
         dlg = clean_dialog(self.frame,mop,logger)
         dlg.CenterOnParent()

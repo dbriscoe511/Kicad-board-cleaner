@@ -23,11 +23,11 @@ class board_cleaner:
             des_letter = ''.join(c for c in str(ref) if not c.isnumeric())
 
             #component = self.board.FindModuleByReference(r)
-            hidden_ref = r.IsVisible()
-            hidden_val = v.IsVisible()
+            hidden_ref = not r.IsVisible()
+            hidden_val = not v.IsVisible()
 
             if hide_ref:
-                if des_letter in des_list_ref:
+                if des_letter in des_list_ref and not hidden_ref:
                     r.SetVisible(False)
                     self.logger.info(f"ref hidden {ref}")
                     if hide_fab:
@@ -35,21 +35,21 @@ class board_cleaner:
                 elif "*" in des_list_ref:
                     r.SetVisible(False)
                     self.logger.info("all refs hidden with *")
-                elif unhide_ref and hidden_ref:
-                    r.SetVisible(True)
-                    self.logger.info(f"ref shown {ref}")
+            if not(des_letter in des_list_ref) and unhide_ref and hidden_ref:
+                r.SetVisible(True)
+                self.logger.info(f"ref shown {ref}")
 
             if hide_val:
-                if des_letter in des_list_val:
+                if des_letter in des_list_val and not hidden_val:
                     v.SetVisible(False)
                     self.logger.info(f"val {val} hidden on des {ref}")
                 elif "*" in des_list_val:
                     v.SetVisible(False)
                     self.logger.info("all vals hidden with *")
-                elif unhide_val and hidden_val:
-                    v.SetVisible(True)
-                    self.logger.info(f"val {val} shown on des {ref}")
-                    
+            if not(des_letter in des_list_ref) and unhide_val and hidden_val:
+                v.SetVisible(True)
+                self.logger.info(f"val {val} shown on des {ref}")
+                
         pcbnew.Refresh()
 
 

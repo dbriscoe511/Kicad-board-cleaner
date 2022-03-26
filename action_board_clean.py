@@ -31,6 +31,8 @@ class clean_dialog(clean_boardGUI):
         unhide_des      = self.chkbox_exclude_des.GetValue()
         hide_val        = self.chkbox_hide_val.GetValue()
         unhide_val      = self.chkbox_exclude_val.GetValue()
+        change_des_text = self.chkbox_ch_des.GetValue()
+        change_val_text = self.chkbox_ch_val.GetValue()
 
         #get lists and split
         des_list = self.Des_hide_list.GetValue()
@@ -38,6 +40,14 @@ class clean_dialog(clean_boardGUI):
 
         val_list = self.val_hide_list.GetValue()
         val_list = val_list.split(',')
+
+        #get text properties into a dict
+        text_properties = { "x_des_size" :      self.x_des_size.GetValue(),
+                            "y_des_size" :      self.y_des_size.GetValue(),
+                            "width_des_size" :  self.width_des_size.GetValue(),
+                            "x_val_size" :      self.x_val_size.GetValue(),
+                            "y_val_size" :      self.y_val_size.GetValue(),
+                            "width_val_size" :  self.width_val_size.GetValue() }
 
         #clean
         self.mop.hide(hide_des, hide_val, des_list, val_list, unhide_des, unhide_val )

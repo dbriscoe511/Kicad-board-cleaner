@@ -8,10 +8,19 @@ class board_cleaner:
         self.logger = logger
         self.logger.info("cleaner initialized")
 
-    def hide(self,hide_ref,hide_val,des_list_ref,des_list_val,unhide_ref,unhide_val):
+    def hide(self,hide_ref,hide_val,des_list_ref,des_list_val,unhide_ref,unhide_val, change_des_text, change_val_text, text_properties):
         self.logger.info("starting clean:")
         # log all function call parameters
-        self.logger.info(f"hide_ref {hide_ref} hide val {hide_val} des_list_ref {des_list_ref} des_list_val {des_list_val} unhide_ref {unhide_ref} unhide val {unhide_val}")
+        self.logger.info(   f" hide_ref {hide_ref}"
+                            f" hide val {hide_val}"
+                            f" des_list_ref {des_list_ref}"
+                            f" des_list_val {des_list_val}"
+                            f" unhide_ref {unhide_ref}"
+                            f" unhide val {unhide_val}"
+                            f" change des text properties {change_des_text}"
+                            f" change val text properties {change_val_text}"
+                            f" text properties {text_properties}")
+
         for module in self.modules:
             # reference points to the text object. getreference gives the actual text
             r =     module.Reference()
@@ -47,6 +56,16 @@ class board_cleaner:
             if not(des_letter in des_list_ref) and unhide_val and hidden_val:
                 v.SetVisible(True)
                 self.logger.info(f"val {val} shown on des {ref}")
+
+            if change_des_text:
+                if des_letter in des_list_ref:
+                    self.logger.info(f"ref {ref} changed to x{text_properties['x_des_size']} y{text_properties['y_des_size']} w{text_properties['width_des_size']}")
+                    try:
+                        r.SetSize(pcbnew.wxSize (pcbnew.FromMM(text_properties["x_des_size"]),pcbnew.FromMM(text_properties["y_des_size"])))
+                        r.SetThickness(pcbnew.FromMM(text_properties["width_des_size"]))
+                    except Exception as e:
+                        self.logger.info(f"something went wrong {e}")
+
                 
         pcbnew.Refresh()
 

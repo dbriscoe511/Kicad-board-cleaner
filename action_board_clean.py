@@ -50,7 +50,7 @@ class clean_dialog(clean_boardGUI):
                             "width_val_size" :  self.width_val_size.GetValue() }
 
         #clean
-        self.mop.hide(hide_des, hide_val, des_list, val_list, unhide_des, unhide_val )
+        self.mop.hide(hide_des, hide_val, des_list, val_list, unhide_des, unhide_val, change_des_text, change_val_text, text_properties)
           
     
     def on_ok(self,event):

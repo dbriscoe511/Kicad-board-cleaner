@@ -68,6 +68,12 @@ class clean_boardGUI ( wx.Dialog ):
 
         bSizer15.Add( ( 0, 0), 1, wx.EXPAND, 5 )
 
+
+        bSizer15.Add( ( 0, 0), 1, wx.EXPAND, 5 )
+
+        self.btn_apply = wx.Button( self, wx.ID_APPLY, u"Apply", wx.DefaultPosition, wx.DefaultSize, 0 )
+        bSizer15.Add( self.btn_apply, 0, wx.ALL, 5 )
+
         self.btn_ok = wx.Button( self, wx.ID_OK, u"Ok", wx.DefaultPosition, wx.DefaultSize, 0 )
         bSizer15.Add( self.btn_ok, 0, wx.ALL, 5 )
 
@@ -88,6 +94,7 @@ class clean_boardGUI ( wx.Dialog ):
         self.chkbox_hide_val.Bind( wx.EVT_CHECKBOX, self.level_changed )
         self.chkbox_exclude_val.Bind( wx.EVT_CHECKBOX, self.level_changed )
         self.btn_cancel.Bind( wx.EVT_BUTTON, self.on_cancel )
+        self.btn_apply.Bind( wx.EVT_BUTTON, self.on_apply )
         self.btn_ok.Bind( wx.EVT_BUTTON, self.on_ok )
 
     def __del__( self ):
@@ -102,6 +109,9 @@ class clean_boardGUI ( wx.Dialog ):
         event.Skip()
 
 
+
+    def on_apply( self, event ):
+        event.Skip()
 
     def on_ok( self, event ):
         event.Skip()

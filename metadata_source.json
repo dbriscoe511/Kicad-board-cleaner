@@ -28,13 +28,13 @@
     ],
     "versions": [
         {
-            "version": "1.0.0",
+            "version": "1.0.1",
             "status": "stable",
             "kicad_version": "6.0",
-            "download_sha256": "a18622dca26e8c49f5d9dc5be6da93c8f545a1e1f20abaaef063b36e6361584c",
-            "download_size": 10112,
-            "download_url": "https://github.com/dbriscoe511/Kicad-board-cleaner/releases/download/1.0.0/Board-cleaner-1.0.0-pcm.zip",
-            "install_size": 16599,
+            "download_sha256": "be287911baabea6adbec783949c34aa02b70cc97e65c6789b55c38cf1cff81e5",
+            "download_size": 10104,
+            "download_url": "https://github.com/dbriscoe511/Kicad-board-cleaner/releases/download/1.0.1/Board-cleaner-1.0.1-pcm.zip",
+            "install_size": 16598,
             "platforms": [
                 "linux",
                 "macos",

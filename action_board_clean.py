@@ -22,8 +22,9 @@ class clean_dialog(clean_boardGUI):
 
         
 
-        
-    def on_ok(self,event):
+    def on_apply(self, event):
+
+        self.logger.info("Changes Applied")
 
         #get checkboxes
         hide_des        = self.chkbox_hide_des.GetValue()
@@ -40,6 +41,16 @@ class clean_dialog(clean_boardGUI):
 
         #clean
         self.mop.hide(hide_des, hide_val, des_list, val_list, unhide_des, unhide_val )
+          
+    
+    def on_ok(self,event):
+
+        self.logger.info("Changes oked")
+        self.on_apply(event)
+        
+
+        event.Skip()
+        self.Destroy()
 
 
     def on_cancel(self, event):
